@@ -42,6 +42,8 @@ public class PhoneApp2 {
 		// iphone 객체는 phone 타입니다 (상속)   
 		Phone p3 = new Iphone();
 		
+		Iphone p4 = (Iphone)p3;
+		
 //		p3.appleMusic();					//iphone
 //		p3.applePay();						//iphone
 //		p3.ip = "192.167.21.1";				//smartphone
@@ -50,5 +52,15 @@ public class PhoneApp2 {
 		p3.number = "010 - 2222 - 3333";	//phone
 		p3.call();							//phone
 		p3.receive();						//phone
+		
+		// 데이터타입이 다를 때 옮겨가는 방법 p4
+		p4.appleMusic();					//iphone
+		p4.applePay();						//iphone
+		p4.ip = "192.167.21.1";				//smartphone
+		p4.internet();						//smartphone
+		p4.game();							//smartphone
+		p4.number = "010 - 2222 - 3333";	//phone
+		p4.call();							//phone
+		p4.receive();						//phone
 	}
 }
